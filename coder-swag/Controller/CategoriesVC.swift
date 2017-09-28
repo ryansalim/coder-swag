@@ -39,5 +39,21 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         let height = CGFloat(156)
         return height
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = getCategories[indexPath.row]
+        performSegue(withIdentifier: "ProductVC", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productVC = segue.destination as? ProductVC {
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            if sender as? Category != nil {
+                productVC.initProduct(category: sender as! Category)
+            }
+        }
+    }
 }
 
