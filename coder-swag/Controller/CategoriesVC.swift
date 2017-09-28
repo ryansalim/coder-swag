@@ -39,7 +39,5 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         let height = CGFloat(156)
         return height
     }
-
-
 }
 
