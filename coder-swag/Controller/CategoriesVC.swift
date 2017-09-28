@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CategoriesVC.swift
 //  coder-swag
 //
 //  Created by admin on 9/28/17.
