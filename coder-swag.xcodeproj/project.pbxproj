@@ -13,6 +13,8 @@
 		844A235E1F7CFFC7002AB718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844A235D1F7CFFC7002AB718 /* Assets.xcassets */; };
 		844A23611F7CFFC7002AB718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844A235F1F7CFFC7002AB718 /* LaunchScreen.storyboard */; };
 		844A236C1F7D0802002AB718 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A236B1F7D0802002AB718 /* CategoryCell.swift */; };
+		844A236E1F7D0D5B002AB718 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A236D1F7D0D5B002AB718 /* Category.swift */; };
+		844A23711F7D1014002AB718 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A23701F7D1014002AB718 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		844A23601F7CFFC7002AB718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844A23621F7CFFC7002AB718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844A236B1F7D0802002AB718 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		844A236D1F7D0D5B002AB718 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		844A23701F7D1014002AB718 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		844A23551F7CFFC7002AB718 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				844A236F1F7D100A002AB718 /* Services */,
 				844A236A1F7D079D002AB718 /* View */,
 				844A23691F7D0792002AB718 /* Model */,
 				844A23681F7D078A002AB718 /* Controller */,
@@ -79,6 +84,7 @@
 		844A23691F7D0792002AB718 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				844A236D1F7D0D5B002AB718 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				844A236B1F7D0802002AB718 /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		844A236F1F7D100A002AB718 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				844A23701F7D1014002AB718 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,8 @@
 				844A23591F7CFFC7002AB718 /* CategoriesVC.swift in Sources */,
 				844A23571F7CFFC7002AB718 /* AppDelegate.swift in Sources */,
 				844A236C1F7D0802002AB718 /* CategoryCell.swift in Sources */,
+				844A236E1F7D0D5B002AB718 /* Category.swift in Sources */,
+				844A23711F7D1014002AB718 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
